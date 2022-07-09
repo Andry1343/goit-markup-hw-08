@@ -31,22 +31,25 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
+  } 
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
-  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  } 
 }
 
 .list {
@@ -56,4 +59,11 @@ ul {
 .logo-studio,
 .logo-web {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }

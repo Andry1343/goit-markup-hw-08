@@ -1,40 +1,64 @@
 .methods {
   color: var(--header-color);
-  padding-top: 95px;
-  padding-bottom: 95px;
+  /* padding-top: 95px;
+  padding-bottom: 95px; */
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .methods__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.metods__div {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    margin-right: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.metods__icon {
+  justify-content: center;
+  background-position: center;
+  align-items: center;
 }
 
 .methods__items {
-  width: 270px;
-  margin-right: 30px;
-  &::before {
-    content: '';
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    height: 120px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
   }
-  &:last-child {
-    margin-right: 0px;
-  }
-  &:nth-child(1)::before {
-    background-image: url(../img/antenna1.svg);
-  }
-  &:nth-child(2)::before {
-    background-image: url(../img/clock2.svg);
-  }
-  &:nth-child(3)::before {
-    background-image: url(../img/diagram3.svg);
-  }
-  &:nth-child(4)::before {
-    background-image: url(../img/astronaut4.svg);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -46,11 +70,29 @@
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 .methods__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  display: block;
+
+  /*  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  } */
 }
