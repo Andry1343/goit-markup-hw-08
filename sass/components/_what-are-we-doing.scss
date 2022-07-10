@@ -1,6 +1,9 @@
 .what-are-we-doing {
   color: var(--header-color);
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .what-are-we-doing-h2 {

@@ -518,6 +518,11 @@ body {
   color: var(--header-color);
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing {
+    display: none;
+  }
+}
 
 .what-are-we-doing-h2 {
   font-weight: 700;
@@ -749,7 +754,6 @@ body {
 }
 
 .regular-customers-ul {
-  outline: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -995,6 +999,12 @@ body {
   cursor: pointer;
 }
 
+/* .address {
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
 .modal {
   padding: 40px;
 }
