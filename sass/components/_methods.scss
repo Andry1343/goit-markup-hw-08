@@ -16,6 +16,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 .methods__list {
