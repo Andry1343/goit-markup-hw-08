@@ -61,9 +61,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu__item:last-child {
-  margin-right: 0px;
-}
+
 
 .logo-studio {
   font-family: 'Raleway';
@@ -205,6 +203,8 @@
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  background: rgba(0, 0, 0, 0);
+  border: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -240,47 +240,85 @@
   visibility: visible;
 }
 
-.mob__menu__list {
-  /* display: block; */
+/* .mob__menu__list {
+  
   gap: 35px;
   
-}
+} */
 .mob__menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+/* .mob__menu__item {gap: 35px; display: block;} */
+
+.menu__item:last-child {
+  margin-right: 0px;
 }
 
 /* .mob__menu__link__portfolio__blue {
  
 } */
 
-.mob__menu__link__portfolio {
+.mob__menu__link__studio {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18px;
+  /* line-height: 1.18px; */
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  /* display: block; */
+}
+
+.mob__menu__link__studio {
+  font-weight: 500;
+  font-size: 40px;
+  /* line-height: 1.18px; */
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  /* display: block; */
+}
+
+.mob__menu__link__studio_black {
+  font-weight: 500;
+  font-size: 40px;
+  /* line-height: 1.18px; */
   letter-spacing: 0.02em;
   color: #212121;
+  /* display: block; */
 }
 
 .mob__menu__link__portfolio__black {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18px;
+  /* line-height: 1.18px; */
   letter-spacing: 0.02em;
   color: #212121;
+  /* display: block; */
 }
+
+.mob__menu__link__portfolio__blue {
+  font-weight: 500;
+  font-size: 40px;
+  /* line-height: 1.18px; */
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  /* display: block; */
+}
+
+
 
 .mob__menu__link__contact {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18px;
+  /* line-height: 1.18px; */
   letter-spacing: 0.02em;
   color: #212121;
+  /* display: block; */
 }
 
 .mob__connect {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 
@@ -288,7 +326,7 @@
 .mob__connect__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.18px;
+  /* line-height: 1.18px; */
   letter-spacing: 0.02em;
   color: #2196f3;
 }
