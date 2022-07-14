@@ -51,6 +51,7 @@ ul {
     max-width: 1200px;
   }
 }
+
 .list {
   list-style: none;
 }
@@ -159,9 +160,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .connect {
-    /* display: flex;
-    align-items: center;
-    flex-wrap: wrap; */
     margin-left: auto;
   }
 }
@@ -227,7 +225,7 @@ body {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
 }
 
@@ -273,6 +271,16 @@ body {
   height: 4px;
   position: relative;
   bottom: -37px;
+}
+@media screen and (min-width: 768px) {
+  .menu__link__border::after {
+    bottom: -42px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__link__border::after {
+    bottom: -37px;
+  }
 }
 
 .menu__link__contact {
@@ -360,23 +368,14 @@ body {
   visibility: visible;
 }
 
-/* .mob__menu__list {
-
-  gap: 35px;
-
-} */
 .mob__menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-/* .mob__menu__item {gap: 35px; display: block;} */
 .menu__item:last-child {
   margin-right: 0px;
 }
 
-/* .mob__menu__link__portfolio__blue {
-
-} */
 .mob__menu__link__studio {
   font-weight: 500;
   font-size: 40px;
@@ -477,7 +476,6 @@ body {
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
-  /* color: var(--secondary-text-color); */
 }
 
 .service__order {
@@ -513,7 +511,17 @@ body {
 
 @media screen and (min-width: 480px) {
   .service__order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/zadniyfon_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 480px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-width: 480px) and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-width: 480px) and (min-resolution: 2dppx) and (min-width: 480px) {
+  .service__order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-mobile@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -523,7 +531,17 @@ body {
 }
 @media screen and (max-width: 480px) {
   .service__order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/zadniyfon_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 480px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2) and (max-width: 480px), screen and (max-width: 480px) and (min-resolution: 192dpi) and (max-width: 480px), screen and (max-width: 480px) and (min-resolution: 2dppx) and (max-width: 480px) {
+  .service__order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-mobile@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -533,19 +551,37 @@ body {
 }
 @media screen and (min-width: 768px) {
   .service__order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/zadniyfon_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 768px;
-    /* height: 600px; */
-    /*  margin-left: auto;
-    margin-right: auto; */
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .service__order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-tablet@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .service__order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/zadniyfon_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .service__order {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-desktop@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -564,28 +600,30 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* width: 696px; */
   margin: 0 auto 30px;
 }
 @media screen and (min-width: 480px) {
   .service__order__tex {
     font-size: 26px;
     line-height: 1.62;
-    max-width: 480px;
   }
 }
 @media screen and (max-width: 480px) {
   .service__order__tex {
     font-size: 26px;
     line-height: 1.62;
-    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .service__order__tex {
     font-size: 26px;
     line-height: 1.62;
-    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service__order__tex {
+    font-size: 26px;
+    line-height: 1.62;
   }
 }
 
@@ -837,15 +875,34 @@ body {
 }
 
 .our-team-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px; */
+}
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .our-team-items {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .our-team-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-team-items {
@@ -1483,6 +1540,12 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (max-width: 1200px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
+}
 
 .check-text span {
   width: 16px;
@@ -1558,6 +1621,12 @@ body {
   text-decoration-line: underline;
   color: #2196f3;
 }
+@media screen and (max-width: 1200px) {
+  .dogovor {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
+}
 
 .modal-btn {
   width: 200px;
@@ -1602,12 +1671,36 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 530px;
-  min-height: 580px;
+  /* width: 530px;
+  min-height: 580px; */
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    min-height: 580px;
+  }
 }
 
 .modal-close-btn {

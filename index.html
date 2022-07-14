@@ -110,7 +110,7 @@
 
   <section class="service__order">
     <div class="container">
-      <h1 class="service__order__tex">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="service__order__tex">Эффективные решения <br> для вашего бизнеса</h1>
       <button class="service__order__button data-modal-open" data-modal-open name="button">
         Заказать услугу
       </button>
@@ -172,27 +172,36 @@
       <h2 class="what-are-we-doing-h2">Чем мы занимаемся</h2>
       <ul class="what-are-we-doing-list list">
         <li class="what-are-we-doing-items">
-          <div class="box1">
-            <img src="./img/box1.jpg" alt="box1" width="370" />
-          </div>
+          <picture>
+            <source srcset="
+            \img\works\work1.jpg 1x,
+            \img\works\work1@2x.jpg 2x" />
+            <img src=" \img\works\work1.jpg" alt="box1" width="370px"/>
+          </picture>
           <div class="texontop-div">
             <p class="texonbottom">Десктопные приложения</p>
           </div>
         </li>
 
         <li class="what-are-we-doing-items">
-          <div>
-            <img src="./img/box2.jpg" alt="box2" width="370" />
-          </div>
+          <picture>
+            <source srcset="
+            \img\works\work2.jpg 1x,
+            \img\works\work2@2x.jpg 2x"/>
+            <img src=" \img\works\work2.jpg" alt="box2" width="370px"/>
+          </picture>
           <div class="texontop-div">
             <p class="texonbottom">Мобильные приложения</p>
           </div>
         </li>
 
         <li class="what-are-we-doing-items">
-          <div>
-            <img src="./img/box3.jpg" alt="box3" width="370" />
-          </div>
+          <picture>
+            <source srcset="
+            \img\works\work3.jpg 1x,
+            \img\works\work3@2x.jpg 2x"/>
+            <img src=" \img\works\work3.jpg" alt="box3" width="370px"/>
+          </picture>
           <div class="texontop-div">
             <p class="texonbottom">Дизайнерские решения</p>
           </div>
@@ -208,7 +217,24 @@
       <h3 class="our-team-h3">Наша команда</h3>
       <ul class="our-team-list list">
         <li class="our-team-items">
-          <img src="./img/img0.jpg" alt="Игорь Демьяненко" width="270" />
+          <picture>
+            <source srcset="
+            \img\employees\employee1-708.jpg  1x,
+            \img\employees\employee1-900.jpg  2x
+              " media="(min-width: 1200px) " />
+            <source srcset="
+            \img\employees\employee1-450.jpg 1x,
+            \img\employees\employee1-540.jpg 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+            \img\employees\employee1-270.jpg 1x,
+            \img\employees\employee1-354.jpg 2x
+              " media="(min-width: 480px)" />
+            <img src="\img\employees\employee1-270.jpg" alt="Игорь Демьяненко" sizes="(min-width: 1200px) 270px,
+            (min-width: 768px) 354px, 
+            (min-width: 480px) 450px, 450px" />
+          </picture>
+          <!-- <img src="./img/img0.jpg" alt="Игорь Демьяненко" width="270" /> -->
           <h4 class="our-team-name">Игорь Демьяненко</h4>
           <p lang="en" class="our-team-job-title">Product Designer</p>
           <ul class="our-team-soc-link list">
@@ -244,7 +270,24 @@
         </li>
 
         <li class="our-team-items">
-          <img src="./img/img1.jpg" alt="Ольга Репина" width="270" />
+          <picture>
+            <source srcset="
+            \img\employees\employee2-708.jpg  1x,
+            \img\employees\employee2-900.jpg  2x
+              " media="(min-width: 1200px)" />
+            <source srcset="
+            \img\employees\employee2-450.jpg 1x,
+            \img\employees\employee2-540.jpg 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+            \img\employees\employee2-270.jpg 1x,
+            \img\employees\employee2-354.jpg 2x
+              " media="(min-width: 480px)" />
+            <img src="\img\employees\employee2-270.jpg" alt="Ольга Репина" sizes="(min-width: 1200px) 270px,
+            (min-width: 768px) 354px, 
+            (min-width: 480px) 450px, 450px" />
+          </picture>
+          <!-- <img src="./img/img1.jpg" alt="Ольга Репина" width="270" /> -->
           <h4 class="our-team-name">Ольга Репина</h4>
           <p lang="en" class="our-team-job-title">Frontend Developer</p>
           <ul class="our-team-soc-link list">
@@ -280,7 +323,24 @@
         </li>
 
         <li class="our-team-items">
-          <img src="./img/img2.jpg" alt="Николай Тарасов" width="270" />
+          <picture>
+            <source srcset="
+            \img\employees\employee3-708.jpg  1x,
+            \img\employees\employee3-900.jpg  2x
+              " media="(min-width: 1200px)" />
+            <source srcset="
+            \img\employees\employee3-450.jpg 1x,
+            \img\employees\employee3-540.jpg 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+            \img\employees\employee3-270.jpg 1x,
+            \img\employees\employee3-354.jpg 2x
+              " media="(min-width: 480px)" />
+            <img src="\img\employees\employee3-270.jpg" alt="Николай Тарасов" sizes="(min-width: 1200px) 270px,
+              (min-width: 768px) 354px, 
+              (min-width: 480px) 450px, 450px" />
+          </picture>
+          <!-- <img src="./img/img2.jpg" alt="Николай Тарасов" width="270" /> -->
           <h4 class="our-team-name">Николай Тарасов</h4>
           <p lang="en" class="our-team-job-title">Marketing</p>
           <ul class="our-team-soc-link list">
@@ -316,7 +376,24 @@
         </li>
 
         <li class="our-team-items">
-          <img src="./img/img3.jpg" alt="Михаил Ермаков" width="270" />
+          <picture>
+            <source srcset="
+            \img\employees\employee4-708.jpg  1x,
+            \img\employees\employee4-900.jpg  2x
+              " media="(min-width: 1200px)" />
+            <source srcset="
+            \img\employees\employee4-450.jpg 1x,
+            \img\employees\employee4-540.jpg 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+            \img\employees\employee4-270.jpg 1x,
+            \img\employees\employee4-354.jpg 2x
+              " media="(min-width: 480px)" />
+            <img src="\img\employees\employee4-270.jpg" alt="Михаил Ермаков" sizes="(min-width: 1200px) 270px,
+            (min-width: 768px) 354px, 
+            (min-width: 480px) 450px, 450px" />
+          </picture>
+          <!-- <img src="./img/img3.jpg" alt="Михаил Ермаков" width="270" /> -->
           <h4 class="our-team-name">Михаил Ермаков</h4>
           <p lang="en" class="our-team-job-title">UI Designer</p>
           <ul class="our-team-soc-link list">
