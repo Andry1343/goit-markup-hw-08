@@ -1,8 +1,9 @@
 .modal {
   overflow-y: scroll;
   position: fixed;
-  width: calc(100% - 30px);
-  height: 85%;
+  /* width: calc(100% - 30px); */
+  width: calc(100% - 10px);
+  height: 80%;
   min-height: 480px;
   max-height: 609px;
   opacity: 1;
@@ -21,11 +22,18 @@
 
   @media screen and (min-width: 480px) {
     width: 450px;
+    
   }
+
+  /* @media screen and (max-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  } */
   @media screen and (min-width: 1200px) {
     overflow-y: hidden;
     width: 528px;
     height: 581px;
+    
   }
 }
 
@@ -40,16 +48,12 @@
 }
 
 .modal__agreement {
- /*  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  line-height: 1.2; */
-
-  /* position: relative; */
+ 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     
     font-size: 12px;
     line-height: 1.17;
@@ -222,6 +226,9 @@
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+  /* @media screen and (max-width: 480px) {
+    margin-top: 15px;
+  } */
 }
 
 .backdrop {
