@@ -510,7 +510,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
   }
 }
@@ -520,7 +522,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
   }
 }
@@ -530,7 +534,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
   }
 }
@@ -540,7 +546,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
   }
 }
@@ -550,7 +558,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 768px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -559,7 +569,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 768px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1063,8 +1075,6 @@ body {
 
 .regular-customers-link {
   color: #afb1b8;
-  /* width: 210px;
-  height: 92px; */
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -1073,19 +1083,6 @@ body {
   justify-content: center;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*   @media screen and (min-width: 480px) {
-    width: 210px;
-    height: 92px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 226px;
-      height: 92px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-      height: 92px;
-    } */
 }
 .regular-customers-link:hover, .regular-customers-link:focus {
   color: #2196f3;
@@ -1444,7 +1441,35 @@ body {
 }
 
 .modal {
+  overflow-y: scroll;
+  position: fixed;
+  width: calc(100% - 30px);
+  height: 85%;
+  min-height: 480px;
+  max-height: 609px;
+  opacity: 1;
+  visibility: visible;
   padding: 40px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    overflow-y: hidden;
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-field {
@@ -1455,6 +1480,20 @@ body {
 }
 .modal-field:nth-last-child(-2n+2) {
   margin-bottom: 0px;
+}
+
+.modal__agreement {
+  /*  display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   line-height: 1.2; */
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .modal-label {
@@ -1592,6 +1631,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
+  display: inline;
   color: #2196f3;
 }
 @media screen and (max-width: 1200px) {
@@ -1637,43 +1677,6 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-360deg);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-  /* width: 530px;
-  min-height: 580px; */
-  width: 100vw;
-  /* height: 100vh; */
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms linear;
-  /*  @media screen and (min-width: 480px) {
-     width: 450px;
-     min-height: 609px;
-
-   }
-   @media screen and (max-width: 480px) {
-     width: 450px;
-     min-height: 609px;
-
-   } */
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 530px;
-    height: 580px;
-  }
 }
 
 .modal-close-btn {

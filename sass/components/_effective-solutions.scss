@@ -30,7 +30,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -40,7 +42,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        max-width: 480px;
+        width: 100%;
+        height: 400px;
+        max-width: 1600px;
         margin: auto;
       }
     }
@@ -52,7 +56,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
     margin: auto;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -62,7 +68,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        max-width: 480px;
+        width: 100%;
+        height: 400px;
+        max-width: 1600px;
         margin: auto;
       }
     }
@@ -74,7 +82,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 768px;
+    width: 100%;
+    height: 400px;
+    max-width: 1600px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       @media screen and (min-width: 768px) {
@@ -83,7 +93,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        max-width: 768px;
+        width: 100%;
+        height: 400px;
+        max-width: 1600px;
       }
     }
   }

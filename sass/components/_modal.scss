@@ -1,5 +1,32 @@
 .modal {
+  overflow-y: scroll;
+  position: fixed;
+  width: calc(100% - 30px);
+  height: 85%;
+  min-height: 480px;
+  max-height: 609px;
+  opacity: 1;
+  visibility: visible;
   padding: 40px;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms linear;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    overflow-y: hidden;
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-field {
@@ -10,6 +37,22 @@
   &:nth-last-child(-2n + 2) {
     margin-bottom: 0px;
   }
+}
+
+.modal__agreement {
+ /*  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 1.2; */
+
+  /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 .modal-label {
@@ -72,9 +115,7 @@
   @media screen and (max-width: 1200px) {
     font-size: 12px;
     line-height: 1.17px;
-    
   }
- 
 }
 
 .check-text span {
@@ -87,8 +128,6 @@
   justify-content: center;
   border-radius: 4px;
   border: solid;
-
-  
 }
 
 .check-icon {
@@ -151,12 +190,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
+  display: inline;
   color: #2196f3;
 
   @media screen and (max-width: 1200px) {
     font-size: 12px;
     line-height: 1.17px;
-    
   }
 }
 
@@ -197,41 +236,6 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-360deg);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-  /* width: 530px;
-  min-height: 580px; */
-  width: 100vw;
-  /* height: 100vh; */
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms linear;
-
- /*  @media screen and (min-width: 480px) {
-    width: 450px;
-    min-height: 609px;
-   
-  }
-  @media screen and (max-width: 480px) {
-    width: 450px;
-    min-height: 609px;
-   
-  } */
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    height: 609px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 530px;
-    height: 580px;
-  }
 }
 
 .modal-close-btn {
