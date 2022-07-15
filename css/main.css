@@ -1680,14 +1680,18 @@ body {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
-    min-height: 609px;
+    /* width: 450px;
+    min-height: 609px; */
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 480px) {
   .modal {
-    width: 450px;
-    min-height: 609px;
+    /* width: 450px;
+    min-height: 609px; */
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 768px) {
